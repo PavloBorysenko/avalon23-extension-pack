@@ -1,6 +1,6 @@
 <?php
 /*
-  Plugin Name: Extension pack for Avalon23!
+  Plugin Name: Extension pack for Avalon23
   Plugin URI: https://avalon23.dev/document/avalon23-extension-pack/
   Description: Extensions for Avalon23 Filter . For example: auto price, preloader etc.
   Requires at least: WP 4.9
