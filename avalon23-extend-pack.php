@@ -157,3 +157,9 @@ if (in_array('avalon23-products-filter/avalon23-products-filter.php', apply_filt
 	$avalon23_ext = new Avalon23_Extend_Pack();
 	add_action('init', array($avalon23_ext, 'init'), 9999);
 }
+
+add_action( 'before_woocommerce_init', function() {
+	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+	}
+} );
